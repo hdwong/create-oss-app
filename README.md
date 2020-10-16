@@ -5,11 +5,11 @@ Creates a B2-OSS application using the command line.
 ### 初始化 App
 你可以通过以下命令来快速创建一个 App 的模版：
 
-```
+```bash
 npm init oss-app [--js]
 ```
 或
-```
+```bash
 yarn create oss-app [--js]
 ```
 
@@ -21,7 +21,7 @@ yarn create oss-app [--js]
 - /demo                 // 目录名以 App id 命名
   - assets              // 资源目录，存放如图片、CSS 等
     - icon.svg          // App 图标
-    - styles.scss       // App scss 样式表
+    - demo.scss         // App scss 样式表
   - components
     - statusbar.tsx     // 底部状态栏组件
   - service

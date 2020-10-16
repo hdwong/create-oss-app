@@ -1,4 +1,4 @@
-#create-oss-app
+# create-oss-app
 
 Creates a B2-OSS application using the command line.
 

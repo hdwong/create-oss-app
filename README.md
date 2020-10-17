@@ -20,16 +20,17 @@ yarn create oss-app [--js]
 ```
 - /demo                 // 目录名以 App id 命名
   - assets              // 资源目录，存放如图片、CSS 等
+    - demo.scss         // App Scss 样式表
     - icon.svg          // App 图标
-    - demo.scss         // App scss 样式表
   - components
-    - statusbar.tsx     // 底部状态栏组件
+    - Layout.tsx        // 布局组件
+    - Statusbar.tsx     // 底部状态栏组件
   - service
     - demo.ts           // App egg 服务脚本
   - demo.ts             // App 描述文件
-  - store.ts            // Mobx 应用数据
   - index.tsx           // 首页
   - pageage.json        // package 依赖等信息
+  - store.ts            // Mobx 应用数据
 ```
 
 其中 App 描述文件（demo.ts）内容大致如下：
@@ -49,7 +50,8 @@ interface IAppConfig {
   title: string;              // 应用名称
   icon: any;                  // 应用图标
   menu?: Array<IMenuItem>;    // 菜单
-  statusbar?: any;            // 窗口底部状态栏
+  statusbar?: any;            // 窗口底部状态栏组件
+  layout?: any;               // 窗口布局组件
   widgets?: Array<IWidget>;   // Widgets
   store?: any;                // 应用内 store
   mainWindow?: {              // 主窗口配置

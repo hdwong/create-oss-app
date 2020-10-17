@@ -1,6 +1,7 @@
 import { IAppConfig, IMenuItem } from '@app/types';
 import Icon from './assets/icon.svg';
 import Statusbar from './components/Statusbar';
+import Layout from './components/Layout';
 import { __Appid__Store } from './store';
 
 const menu: Array<IMenuItem> = [{
@@ -21,5 +22,6 @@ export default ({
   icon: Icon,
   menu,
   statusbar: Statusbar,
+  layout: Layout,
   store: __Appid__Store,
 }) as IAppConfig;

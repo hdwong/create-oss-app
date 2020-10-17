@@ -1,11 +1,19 @@
-import { IAppConfig } from '@app/types';
+import { IAppConfig, IMenuItem } from '@app/types';
 import Icon from './assets/icon.svg';
 import Statusbar from './components/Statusbar';
 import { __Appid__Store } from './store';
 
-const menu = [{
-  title: 'Home',
-  link: '/app/__appid__',
+const menu: Array<IMenuItem> = [{
+  title: 'Menu',
+  items: [{
+    title: 'Home',
+    link: '/app/__appid__',
+  }, {
+    title: '---',
+  }, {
+    title: 'Item',
+    link: '/app/__appid__/notfound',
+  }],
 }];
 
 export default ({

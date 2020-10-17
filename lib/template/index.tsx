@@ -6,7 +6,9 @@ import styles from './assets/__appid__.scss';
 class __Appid__Index extends React.PureComponent<AppProps> {
   render() {
     return (
-      <h1 className={styles.sample}>It works!</h1>
+      <div className="layout-default">
+        <h1 className={styles.sample}>It works!</h1>
+      </div>
     );
   }
 }

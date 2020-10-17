@@ -6,11 +6,13 @@ import styles from './assets/__appid__.scss';
 class __Appid__Index extends React.PureComponent {
   render() {
     return (
-      <h1 className={styles.sample}>It works!</h1>
+      <div className="layout-default">
+        <h1 className={styles.sample}>It works!</h1>
+      </div>
     );
   }
 }
 
-__Appid__Index.title = '__APPID__ Home Page';
+__Appid__Index.title = '__Appid__ Home Page';
 
 export default __Appid__Index;
